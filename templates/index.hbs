@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    {{>headerlinks}}
+  </head>
+  <body>
+
+    
+
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-5 mt-5">
+          <div class="contianer bg-white p-5 rounded-3 shadow-sm border">
+              <div>
+                <p class="text-center text-success" style="font-size: 5.5rem;"><i class="fa-solid fa-envelope-circle-check"></i></p>
+                <p class="text-center text-center h5">OTP Verification Portal</p>
+                <p class="text-muted text-center">Write +91 before entering the number</p>
+                <div class="row pt-3 pb-2">
+                  <form action="/send-otp" method="POST">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Enter your phone number</label>
+                          <input
+                            name="phonenumber"
+                            type="tel"
+                            class="form-control input-letter"
+                            id="exampleInputPassword1"
+                            autocomplete="off"
+                            required
+                            />
+                    </div>
+                <div class="row pt-3">
+                  <div class="col-6">
+                    <button type="submit" class="btn btn-success w-100">Generate OTP</button>
+                  </div>
+                </div>
+                  </form>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+
+</html>
